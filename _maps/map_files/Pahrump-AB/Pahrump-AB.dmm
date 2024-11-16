@@ -26190,6 +26190,12 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
+"eOi" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/f13{
+	icon_state = "yellowrustyfull"
+	},
+/area/f13/building/museum)
 "eOm" = (
 /mob/living/simple_animal/pet/dog/protectron,
 /turf/open/floor/plating/f13/inside,
@@ -64403,7 +64409,6 @@
 	},
 /area/f13/wasteland)
 "uqk" = (
-/obj/effect/decal/remains/human,
 /obj/machinery/button/door{
 	id = museum;
 	pixel_x = 25
@@ -112432,7 +112437,7 @@ jaE
 ijw
 fAr
 laI
-bhp
+eOi
 uqk
 goh
 oSZ
