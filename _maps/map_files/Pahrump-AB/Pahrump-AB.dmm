@@ -13659,7 +13659,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
@@ -17964,7 +17964,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/building/museum)
@@ -21232,7 +21232,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/building/museum)
@@ -28317,7 +28317,7 @@
 /obj/structure/grille,
 /obj/structure/barricade/bars,
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building/museum)
@@ -29370,7 +29370,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/building/museum)
@@ -31181,8 +31181,9 @@
 /obj/structure/railing/handrail/blue{
 	pixel_y = -4
 	},
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
@@ -32303,7 +32304,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/building/museum)
@@ -41439,7 +41440,10 @@
 	},
 /obj/structure/grille/broken,
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "museum"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building/museum)
@@ -43762,7 +43766,7 @@
 /obj/structure/grille/broken,
 /obj/structure/barricade/bars,
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building/museum)
@@ -48903,7 +48907,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/building/museum)
@@ -55245,7 +55249,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building/museum)
@@ -59684,7 +59688,7 @@
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/blood/old,
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building/museum)
@@ -60685,7 +60689,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plating/dirt,
 /area/f13/building/museum)
@@ -63331,7 +63335,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building/museum)
@@ -64410,7 +64414,7 @@
 /area/f13/wasteland)
 "uqk" = (
 /obj/machinery/button/door{
-	id = museum;
+	id = "museum";
 	pixel_x = 25
 	},
 /turf/open/floor/f13{
@@ -69113,7 +69117,7 @@
 	pixel_y = -4
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/building/museum)
@@ -69793,8 +69797,9 @@
 	pixel_y = -4
 	},
 /obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
@@ -70158,7 +70163,7 @@
 	desc = "A plaque advertising Vault-Tec!"
 	},
 /obj/machinery/door/poddoor/shutters{
-	id = museum
+	id = "museum"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/building/museum)
