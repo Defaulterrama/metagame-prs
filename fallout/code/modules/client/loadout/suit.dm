@@ -1,4 +1,4 @@
-/* why is any of this here and not with the rest of the loadout stuff?
+// why is any of this here and not with the rest of the loadout stuff?
 //because they're suits durrrrr
 
 /datum/gear/suit/goner_red
