@@ -87,7 +87,6 @@
 /datum/gear/uniform/bodyguard
 	name = "bodyguard outfit"
 	path = /obj/item/clothing/under/f13/bodyguard
-	cost = 2
 
 /datum/gear/uniform/cowboy
 	name = "cowboy outfit, brown"
@@ -104,12 +103,10 @@
 /datum/gear/uniform/combat
 	name = "combat uniform"
 	path = /obj/item/clothing/under/f13/combat_shirt
-	cost = 2
 
 /datum/gear/uniform/bdu
 	name = "battle dress uniform"
 	path = /obj/item/clothing/under/f13/bdu
-	cost = 3
 
 /datum/gear/uniform/bdu/desert
 	name = "desert battle dress uniform"
