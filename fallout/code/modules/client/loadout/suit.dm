@@ -1,5 +1,11 @@
 // why is any of this here and not with the rest of the loadout stuff?
-//because they're suits durrrrr
+//because they're suits durrrrr wth
+
+/datum/gear/suit
+	category = LOADOUT_CATEGORY_SUIT
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_GENERAL
+	slot = SLOT_WEAR_SUIT
+	cost = 1
 
 /datum/gear/suit/goner_red
 	name = "olive drab trenchcoat, red"
@@ -20,12 +26,6 @@
 	name = "olive drab trenchcoat, yellow"
 	path = /obj/item/clothing/suit/armor/light/duster/goner/yellow
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
-
-
-/datum/gear/suit
-	category = LOADOUT_CATEGORY_SUIT
-	subcategory = LOADOUT_SUBCATEGORY_SUIT_GENERAL
-	slot = SLOT_WEAR_SUIT
 
 /datum/gear/suit/redhood
 	name = "Red cloak"
