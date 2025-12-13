@@ -50,17 +50,14 @@
 /datum/gear/gloves/plated
 	name = "Plated Gloves"
 	path = /obj/item/clothing/gloves/legion/plated
-	cost = 2
 
 /datum/gear/gloves/pugilist
 	name = "Pugilist Armwraps"
 	path = /obj/item/clothing/gloves/fingerless/pugilist
-	cost = 3
 
 /datum/gear/gloves/rifleman
 	name = "Rifleman Gloves"
 	path = /obj/item/clothing/gloves/rifleman
-	cost = 2
 
 /datum/gear/gloves/burnedpatrol
 	name = "Burnt Patrol Gloves"
@@ -69,4 +66,3 @@
 /datum/gear/gloves/bracer
 	name = "Bone Bracers"
 	path = /obj/item/clothing/gloves/bracer
-	cost = 2
