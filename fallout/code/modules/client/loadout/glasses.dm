@@ -22,7 +22,6 @@
 /datum/gear/glasses/biker
 	name = "biker goggles"
 	path = /obj/item/clothing/glasses/f13/biker
-	cost = 2
 
 /datum/gear/glasses/sandstorm
 	name = "sandstorm goggles"
@@ -64,13 +63,13 @@
 	name = "Red Glasses"
 	path = /obj/item/clothing/glasses/red
 
-////  You have em or ya' don't, welcome to the post apocalypse. ~TK 
-/// Stupid ass forgot the other glasses, fuck you cornball lmao ~ SWAGMEYER
+//  You have em or ya' don't, welcome to the post apocalypse. ~TK 
+// Stupid ass forgot the other glasses, fuck you cornball lmao ~ SWAGMEYER
+// i have no idea what im doing but im bringing these back smmmd ~Defaulter
 
 /datum/gear/glasses/prescription
 	name = "Prescription glasses"
 	path = /obj/item/clothing/glasses/regular
-///
 
 /datum/gear/glasses/cold
 	name = "cold-resistant goggles"
@@ -87,12 +86,10 @@
 /datum/gear/glasses/steampunk
 	name = "Steampunk Goggles"
 	path = /obj/item/clothing/glasses/science/f13/steampunk
-	cost = 1
 
 /datum/gear/glasses/sunglasses/reagent
 	name = "Beer Goggles"
 	path = /obj/item/clothing/glasses/sunglasses/reagent
-	cost = 2
 
 /datum/gear/glasses/priestess
 	name = "Priestess Blindfold"
