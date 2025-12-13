@@ -2,7 +2,6 @@
 	category = LOADOUT_CATEGORY_NECK
 	subcategory = LOADOUT_SUBCATEGORY_NECK_GENERAL
 	slot = SLOT_NECK
-	cost = 1
 
 /datum/gear/neck/poncho
 	name = "poncho"
@@ -11,27 +10,22 @@
 /datum/gear/neck/outlawscloak
 	name = "Outlaw's Cloak"
 	path = /obj/item/storage/belt/outlawscloak
-	cost = 3
 
 /datum/gear/neck/peacefulcoat
 	name = "Peacetakers Jacket"
 	path = /obj/item/storage/belt/peacefulcoat
-	cost = 3
 
 /datum/gear/neck/poachercoat
 	name = "Poachers Coat"
 	path = /obj/item/storage/belt/poachercoat
-	cost = 3
 
 /datum/gear/neck/poachervest
 	name = "Poachers Vest"
 	path = /obj/item/storage/belt/poachervest
-	cost = 3
 
 /datum/gear/neck/dantecoat
 	name = "Mercenary Trenchcoat"
 	path = /obj/item/storage/belt/dantecoat
-	cost = 3
 
 /datum/gear/neck/rangercape
 	name = "Ranger cape"
@@ -72,22 +66,19 @@
 /datum/gear/neck/sapphirecollar
 	name = "Sapphire Collar"
 	path = /obj/item/clothing/neck/sapphirecollar
-	cost = 2
+	cost = 1
 
 /datum/gear/neck/rubycollar
 	name = "Ruby Collar"
 	path = /obj/item/clothing/neck/rubycollar
-	cost = 2
 
 /datum/gear/neck/heartcollar
 	name = "Heart Collar"
 	path = /obj/item/clothing/neck/heartcollar
-	cost = 2
 
 /datum/gear/neck/wolfpendant
 	name = "Wolf Pendant"
 	path = /obj/item/clothing/neck/wolfpendant
-	cost = 2
 
 /datum/gear/neck/apron
 	name = "simple apron"
@@ -172,74 +163,59 @@
 /datum/gear/neck/medolier
 	name = "medolier"
 	path = /obj/item/storage/belt/medolier
-	cost = 2
 
 /datum/gear/neck/bandolier
 	name = "bandolier"
 	path = /obj/item/storage/belt/bandolier
-	cost = 2
 	
 /datum/gear/neck/shoulderholster
 	name = "shoulder holster"
 	path = /obj/item/storage/belt/shoulderholster
-	cost = 2
 
 /datum/gear/belt/sword
 	name = "sword sheath"
 	path = /obj/item/storage/belt/sword
-	cost = 2
 
 /datum/gear/belt/sabre/knife
 	name = "knife bandolier" //for lots of small dicks or something IDFK
 	path = /obj/item/storage/belt/sabre/knife
-	cost = 2
 
 /datum/gear/neck/treasurer
 	name = "Treasurers Mantle"
 	path = /obj/item/clothing/neck/mantle/treasurer
-	cost = 1
 
 /datum/gear/neck/mantle/chief
 	name = "Chieftain Mantle"
 	path = /obj/item/clothing/neck/mantle/chief
-	cost = 1
 
 /datum/gear/neck/mantle/commander
 	name = "Commanders Mantle"
 	path = /obj/item/clothing/neck/mantle/commander
-	cost = 2
 
 /datum/gear/neck/mantle/legion
 	name = "Legion Cape"
 	path = /obj/item/clothing/neck/mantle/legion
-	cost = 2
 
 /datum/gear/neck/apron/medical
 	name = "Surgeon Apron"
 	path = /obj/item/clothing/neck/apron/medical/surgical
-	cost = 1
 
 /datum/gear/neck/apron/chef
 	name = "Chef Apron"
 	path = /obj/item/clothing/neck/apron/chef
-	cost = 1
 
 /datum/gear/neck/apron/labor
 	name = "Laborer Apron"
 	path = /obj/item/clothing/neck/apron/labor
-	cost = 1
 
 /datum/gear/neck/apron/housewife ////Why the fuck do we have this lmao
 	name = "50s Housewife Apron"
 	path = /obj/item/clothing/neck/apron/housewife
-	cost = 1
 
 /datum/gear/neck/jamrock
 	name = "Eldritch Tie"
 	path = /obj/item/clothing/neck/jamrock
-	cost = 1
 
 /datum/gear/neck/necklace/dope
 	name = "Pimp Ass Gold Necklace"
 	path = /obj/item/clothing/neck/necklace/dope
-	cost = 3
