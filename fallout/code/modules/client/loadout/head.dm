@@ -2,11 +2,11 @@
 	category = LOADOUT_CATEGORY_HEAD
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_GENERAL
 	slot = SLOT_HEAD
+	cost = 1
 
 /datum/gear/head/scarecrow
 	name = "scarecrow hat"
 	path = /obj/item/clothing/head/scarecrow_hat
-	cost = 1
 
 /datum/gear/head/angeleyes
 	name = "dark stetson"
