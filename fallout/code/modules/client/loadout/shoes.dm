@@ -133,7 +133,7 @@
 /datum/gear/shoes/galoshes
 	name = "Galoshes"
 	path = /obj/item/clothing/shoes/galoshes
-	cost = 2
+	cost = 1
 
 /// Military aka Two point boots
 
@@ -141,7 +141,7 @@
 	name = "military boots"
 	path = /obj/item/clothing/shoes/f13/military
 	subcategory = LOADOUT_SUBCATEGORY_SHOES_BOOTS
-	cost = 2
+	cost = 1
 
 /datum/gear/shoes/military/leather
 	name = "leather combat boots"
@@ -186,7 +186,7 @@
 /datum/gear/shoes/patrol_boots
 	name = " patrol boots"
 	path = /obj/item/clothing/shoes/f13/military/ncr
-	cost = 2
+	cost = 1
 	subcategory = LOADOUT_SUBCATEGORY_SHOES_BOOTS
 /*	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
