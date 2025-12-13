@@ -2,6 +2,7 @@
 	category = LOADOUT_CATEGORY_NECK
 	subcategory = LOADOUT_SUBCATEGORY_NECK_GENERAL
 	slot = SLOT_NECK
+	cost = 1
 
 /datum/gear/neck/poncho
 	name = "poncho"
@@ -66,7 +67,6 @@
 /datum/gear/neck/sapphirecollar
 	name = "Sapphire Collar"
 	path = /obj/item/clothing/neck/sapphirecollar
-	cost = 1
 
 /datum/gear/neck/rubycollar
 	name = "Ruby Collar"
