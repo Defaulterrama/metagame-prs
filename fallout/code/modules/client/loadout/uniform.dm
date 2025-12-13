@@ -1014,7 +1014,7 @@
 /datum/gear/uniform/wasteland/deadhorses/female
 	name = "Dead horses female garb"
 	path = /obj/item/clothing/under/f13/female/deadhorses
-subcategory = LOADOUT_SUBCATEGORY_UNIFORM_TRIBAL
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_TRIBAL
 
 /datum/gear/uniform/wasteland/rustwalker
 	name = "Rust walkers outfit"
