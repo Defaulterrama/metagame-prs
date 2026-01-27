@@ -260,7 +260,7 @@
 	init_recoil = SMG_RECOIL(1)
 	init_firemodes = list(
 		/datum/firemode/automatic/rpm200,
-		/datum/firemode/semi_auto/faster
+		/datum/firemode/semi_auto/fast
 	)
 	suppressor_state = "10mm_suppressor" //activate if sprited
 	suppressor_x_offset = 30
