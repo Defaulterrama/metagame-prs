@@ -421,19 +421,15 @@
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	/*I.tool_upgrades = list(
-	UPGRADE_PRECISION = 12,
-	UPGRADE_DEGRADATION_MULT = 1.15,
-	UPGRADE_BULK = 1,
-	UPGRADE_HEALTH_THRESHOLD = 10
+	This is a retarded mod and came from Fallout 4. I'm gonna let it stick around but I'm nerfing it.
+	Specifically I removed the fact it 0.8'd recoil and 0.8'd muzzle flash. Also fixed a bug that let it for some reason be used alongside a forged barrel.
 	)*/
 	I.weapon_upgrades = list(
 		GUN_UPGRADE_FIRE_DELAY_MULT = 0.90,
-		GUN_UPGRADE_PROJ_SPEED_MULT = 1.05,
-		GUN_UPGRADE_MUZZLEFLASH = 0.8,
-		GUN_UPGRADE_RECOIL = 0.8
+		GUN_UPGRADE_PROJ_SPEED_MULT = 1.05
 	)
 	I.req_gun_tags = list(GUN_PROJECTILE)
-	I.gun_loc_tag = GUN_MUZZLE
+	I.gun_loc_tag = GUN_BARREL
 	//I.required_qualities = list(QUALITY_WELDING)
 	I.prefix = "ported"
 /*
