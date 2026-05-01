@@ -176,11 +176,11 @@
 	init_mag_type = /obj/item/ammo_box/magazine/smg14
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T4
+	damage_multiplier = GUN_LESS_DAMAGE_T2
 	init_recoil = SMG_RECOIL(0.8)
 	init_firemodes = list(
-		/datum/firemode/burst/three/fast,
-		/datum/firemode/semi_auto/faster
+		/datum/firemode/burst/two/slow,
+		/datum/firemode/semi_auto/slow
 	)
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 
@@ -204,11 +204,11 @@
 	init_mag_type = /obj/item/ammo_box/magazine/greasegun
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T2
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(1)
 	init_firemodes = list(
-		/datum/firemode/burst/five/fast,
-		/datum/firemode/semi_auto/faster
+		/datum/firemode/burst/three/faster,
+		/datum/firemode/semi_auto/fast
 	)
 	suppressor_state = "uzi_suppressor"
 	suppressor_x_offset = 26
@@ -228,7 +228,7 @@
 /obj/item/gun/ballistic/automatic/smg/greasegun/worn
 	name = "beat up .45ACP submachine gun"
 	desc = "What was once an inexpensive, but reliable submachine gun is now an inexpensive piece of shit. It's impressive this thing still fires at all."
-	damage_multiplier = GUN_LESS_DAMAGE_T3
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(1.2)
 	init_firemodes = list(
 		/datum/firemode/burst/three/fast,
@@ -256,7 +256,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m10mm/adv/ext
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T3
+	damage_multiplier = GUN_LESS_DAMAGE_T2
 	init_recoil = SMG_RECOIL(1.2)
 	init_firemodes = list(
 		/datum/firemode/burst/three/faster,
@@ -312,9 +312,9 @@
 	disallowed_mags = list(/obj/item/ammo_box/magazine/uzim9mm/rockwell) //so I don't have to assign a ton of new sprite names
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_AKIMBO
-	damage_multiplier = GUN_LESS_DAMAGE_T2
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_firemodes = list(
-		/datum/firemode/burst/five/fast,
+		/datum/firemode/burst/three/fast,
 		/datum/firemode/semi_auto/faster
 	)
 	can_suppress = TRUE
@@ -343,7 +343,7 @@
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_AKIMBO
 	added_spread = GUN_SPREAD_POOR
-	damage_multiplier = GUN_EXTRA_DAMAGE_0
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(0.75)
 	init_firemodes = list(
 		/datum/firemode/burst/five/fastest,
@@ -361,7 +361,13 @@
 	icon = 'fallout/icons/objects/automatic.dmi'
 	icon_state = "mp40"
 	item_state = "smg9mm"
-
+	damage_multiplier = GUN_LESS_DAMAGE_T2
+	gun_accuracy_zone_type = ZONE_WEIGHT_PRECISION // Accurate semiauto fire
+	init_recoil = SMG_RECOIL(1)
+	init_firemodes = list(
+		/datum/firemode/burst/three/faster,
+		/datum/firemode/semi_auto/faster
+	)
 //compact modernize MP5
 /obj/item/gun/ballistic/automatic/smg/mini_uzi/mp5
 	name = "HK MP-5"
@@ -373,9 +379,13 @@
 	init_mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	weapon_class = WEAPON_CLASS_NORMAL //high class, one of the few smol smgs
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T3
+	damage_multiplier = GUN_LESS_DAMAGE_T2
 	gun_accuracy_zone_type = ZONE_WEIGHT_PRECISION // Accurate semiauto fire
-
+	init_recoil = SMG_RECOIL(0.9)
+	init_firemodes = list(
+		/datum/firemode/burst/three/faster,
+		/datum/firemode/semi_auto/faster
+	)
 //tec-9 but in .22, compared to .22 pistol, is automatic, but less damage, not silenced
 /obj/item/gun/ballistic/automatic/smg/mini_uzi/smg22/tec22
 	name = ".22 machine pistol"
@@ -399,10 +409,10 @@
 	init_mag_type = /obj/item/ammo_box/magazine/uzim9mm/rockwell
 	disallowed_mags = null
 	weapon_class = WEAPON_CLASS_CARBINE	
-	damage_multiplier = GUN_LESS_DAMAGE_T2
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_firemodes = list(
-		/datum/firemode/burst/five/faster,
-		/datum/firemode/semi_auto/fast
+		/datum/firemode/burst/three/slow,
+		/datum/firemode/semi_auto/slow
 	)
 	can_suppress = FALSE
 
@@ -415,9 +425,9 @@
 	init_mag_type = /obj/item/ammo_box/magazine/uzim9mm/rockwell
 	disallowed_mags = null
 	weapon_class = WEAPON_CLASS_CARBINE	
-	damage_multiplier = GUN_LESS_DAMAGE_T2
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_firemodes = list(
-		/datum/firemode/burst/five/faster,
+		/datum/firemode/burst/three/faster,
 		/datum/firemode/semi_auto/fast
 	)
 	can_suppress = FALSE
@@ -430,7 +440,7 @@
 	icon = 	'fallout/icons/objects/automatic.dmi'
 	icon_state = "mac10"
 	weapon_class = WEAPON_CLASS_NORMAL //kinda bulky for a compact gun
-	damage_multiplier = GUN_LESS_DAMAGE_T3 //this spits lots of bullets and is compact and can be dual wielded
+	damage_multiplier = GUN_LESS_DAMAGE_T1 //this spits lots of bullets and is compact and can be dual wielded
 	init_recoil = SMG_RECOIL(1.4)
 	init_firemodes = list(
 		/datum/firemode/burst/five/fastest,
@@ -457,7 +467,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/cg45
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T3
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(0.8)
 	init_firemodes = list(
 		/datum/firemode/burst/three/faster,
@@ -482,7 +492,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T3
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(1)
 	init_firemodes = list(
 		/datum/firemode/burst/three/faster,
@@ -507,11 +517,11 @@
 	init_mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T3
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(1)
 	init_firemodes = list(
-		/datum/firemode/burst/three/faster,
-		/datum/firemode/semi_auto/fast
+		/datum/firemode/burst/three/slower,
+		/datum/firemode/semi_auto/slower
 	)
 
 
@@ -537,7 +547,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m10mm_p90
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_AKIMBO
-	damage_multiplier = GUN_LESS_DAMAGE_T3
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(0.8)
 	init_firemodes = list(
 		/datum/firemode/automatic/rpm200,
@@ -565,7 +575,7 @@
 /obj/item/gun/ballistic/automatic/smg/p90/worn
 	name = "Worn FN P90c"
 	desc = "A FN P90 manufactured by Fabrique Nationale. This one is beat to hell but still works, albeit age has caused it's most ideal features to weaken, the recoil harder to control among other things."
-	damage_multiplier = GUN_LESS_DAMAGE_T4
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(1.1)
 	init_firemodes = list(
 		/datum/firemode/automatic/rpm200,
@@ -594,7 +604,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T2
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	gun_accuracy_zone_type = ZONE_WEIGHT_PRECISION // Accurate semiauto fire
 	init_firemodes = list(
 		/datum/firemode/burst/three/faster,
@@ -622,7 +632,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/pps9mm
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T3
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = SMG_RECOIL(1.1)
 	init_firemodes = list(
 		/datum/firemode/burst/five/fastest,
@@ -1104,7 +1114,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m22
 	init_mag_type = /obj/item/ammo_box/magazine/m22/extended
 	weapon_class = WEAPON_CLASS_CARBINE
-	damage_multiplier = GUN_EXTRA_DAMAGE_T1 // its a weakass cartridge
+	damage_multiplier = GUN_LESS_DAMAGE_T1 // its a weakass cartridge
 	init_recoil = CARBINE_RECOIL(1.2)
 	init_firemodes = list(
 		/datum/firemode/semi_auto,
@@ -1350,7 +1360,7 @@
 	item_state = "alr15"
 	weapon_class = WEAPON_CLASS_RIFLE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_EXTRA_DAMAGE_T1
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	can_bayonet = TRUE
 	bayonet_state = "bayonet"
 	knife_x_offset = 22
@@ -1693,7 +1703,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/w3006
 	weapon_class = WEAPON_CLASS_RIFLE
 	weapon_weight = GUN_TWO_HAND_ONLY
-	damage_multiplier = GUN_EXTRA_DAMAGE_T1
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = RIFLE_RECOIL(1)
 	gun_accuracy_zone_type = ZONE_WEIGHT_PRECISION
 	init_firemodes = list(/datum/firemode/semi_auto/slower)
@@ -1976,7 +1986,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T2
+	damage_multiplier = GUN_LESS_DAMAGE_T3
 	cock_delay = GUN_COCK_RIFLE_BASE
 	init_recoil = RIFLE_RECOIL(1.9)
 	init_firemodes = list(
@@ -2003,17 +2013,16 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "handmade_assault_rifle"
 	item_state = "handmadear"
-	icon_prefix = "handmade_assault_rifle"
+	icon_prefix = "handmade_rifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	weapon_class = WEAPON_CLASS_RIFLE
 	weapon_weight = GUN_ONE_HAND_ONLY
 	damage_multiplier = GUN_EXTRA_DAMAGE_0
 	cock_delay = GUN_COCK_RIFLE_BASE
-	init_recoil = RIFLE_RECOIL(1.2)
+	init_recoil = RIFLE_RECOIL(1)
 	init_firemodes = list(
-		/datum/firemode/automatic/rpm200,
-		/datum/firemode/burst/three
+		/datum/firemode/burst/two/fast
 	)
 	
 	can_bayonet = TRUE
@@ -2044,16 +2053,16 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "handmade_battle_rifle"
 	item_state = "handmadebr"
-	icon_prefix = "handmade_battle_rifle"
+	icon_prefix = "handmade_rifle"
 	mag_type = /obj/item/ammo_box/magazine/m308
 	init_mag_type = /obj/item/ammo_box/magazine/m308
 	weapon_class = WEAPON_CLASS_RIFLE
 	weapon_weight = GUN_TWO_HAND_ONLY
 	damage_multiplier = GUN_EXTRA_DAMAGE_0
 	cock_delay = GUN_COCK_RIFLE_BASE
-	init_recoil = RIFLE_RECOIL(1.5)
+	init_recoil = RIFLE_RECOIL(1)
 	init_firemodes = list(
-		/datum/firemode/automatic/rpm150,
+		/datum/firemode/semi_auto
 	)
 	gun_accuracy_zone_type = ZONE_WEIGHT_PRECISION
 	can_suppress = FALSE
@@ -2077,20 +2086,20 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "handmade_marksman_rifle"
 	item_state = "handmadedmr"
-	icon_prefix = "handmade_marksman_rifle"
+	icon_prefix = "handmade_rifle"
 	mag_type = /obj/item/ammo_box/magazine/w3006
 	init_mag_type = /obj/item/ammo_box/magazine/w3006
 	weapon_class = WEAPON_CLASS_RIFLE
 	weapon_weight = GUN_TWO_HAND_ONLY
-	damage_multiplier = GUN_EXTRA_DAMAGE_T1
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	cock_delay = GUN_COCK_RIFLE_BASE
-	init_recoil = RIFLE_RECOIL(1.3)
+	init_recoil = RIFLE_RECOIL(0.8)
 	init_firemodes = list(
-		/datum/firemode/semi_auto/slow
+		/datum/firemode/semi_auto
 	)
 	gun_tags = list(GUN_FA_MODDABLE, GUN_SCOPE)
 	can_scope = TRUE
-	scope_state = "scope_medium"
+	scope_state = "smallrifle_scope"
 	scope_x_offset = 5
 	scope_y_offset = 14
 	gun_accuracy_zone_type = ZONE_WEIGHT_PRECISION
@@ -2114,23 +2123,166 @@
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "handmade_assault_carbine"
-	item_state = "handmadeacar"
-	icon_prefix = "handmade_assault_carbine"
+	item_state = "handmadecar"
+	icon_prefix = "handmade_rifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	weapon_class = WEAPON_CLASS_CARBINE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_LESS_DAMAGE_T1
+	damage_multiplier = GUN_LESS_DAMAGE_T2
 	cock_delay = GUN_COCK_RIFLE_BASE
-	init_recoil = RIFLE_RECOIL(1.7)
+	init_recoil = RIFLE_RECOIL(1.2)
 	init_firemodes = list(
-		/datum/firemode/automatic/rpm250,
+		/datum/firemode/automatic/rpm200,
 	)
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 24
 	suppressor_y_offset = 24
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+
+/* * * * * * * * * * *
+ * Eastern PDW
+ * High Tier Handmade based on the PP-19 Bizon
+ * 4.73
+ * Less damage, high fire rate
+ * Low Recoil
+ * Fast RPM
+ * Requires G&B 5
+ * * * * * * * * * * */
+
+/obj/item/gun/ballistic/automatic/eastern_pdw
+	name = "Eastern PDW"
+	desc = "A rugged, compact personal defense weapon, commonly found in the hands of Soviet and satellite country crewmen, security forces and auxiliary personnel in the pre-war. It's compact design allows it to be carried in briefcases and backpacks with ease, making it a popular weapon for criminals and assassins alike, both before and after the bombs dropped. Limited production of these firearms continues in workshops across the wasteland, though blueprints are rare to come by, and the ammunition employed is unusual, leaving it reserved for use only by the most resourceful."
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "eastern_pdw"
+	item_state = "easternpdw"
+	icon_prefix = "handmade_rifle"
+	mag_type = /obj/item/ammo_box/magazine/m473
+	init_mag_type = /obj/item/ammo_box/magazine/m473
+	disallowed_mags = list(/obj/item/ammo_box/magazine/m473/small, /obj/item/ammo_box/magazine/m473/small/empty)
+	weapon_class = WEAPON_CLASS_NORMAL
+	weapon_weight = GUN_ONE_HAND_ONLY
+	damage_multiplier = GUN_LESS_DAMAGE_T3
+	cock_delay = GUN_COCK_RIFLE_BASE
+	init_recoil = RIFLE_RECOIL(0.8)
+	init_firemodes = list(
+		/datum/firemode/burst/two/faster,
+		/datum/firemode/automatic/rpm250,
+	)
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 24
+	suppressor_y_offset = 24
+	fire_sound = 'sound/weapons/gunshot_smg.ogg'
+
+/* * * * * * * * * * *
+ * Eastern Light Machine Gun
+ * High Tier Handmade based on the RPK-74
+ * .223/5.56
+ * Reduced damage, High Fire rate suppressive weapon
+ * Medium Recoil
+ * Fast RPM
+ * Requires G&B 5
+ * * * * * * * * * * */
+
+/obj/item/gun/ballistic/automatic/eastern_light_machine_gun
+	name = "Eastern Light Machine Gun"
+	desc = "What can best be described as a rifle pressed into the role of a light machinegun, this weapon boasts incredible firepower at a reasonable weight. Though it tends to kick like a mule compared to similar systems, the weight savings are considerable enough that this weapon sees niche use in some parts of the wasteland by those intent on travelling light but still packing some serious firepower. Of eastern design, this gun's schematics are rare to come by, though it does share a lot of it's parts with the variety of handmade Kalashnikov patterns rifles found stateside in the hands of raiders and mercenaries."
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "eastern_light_machine_gun"
+	item_state = "easternlmg"
+	icon_prefix = "handmade_rifle"
+	mag_type = /obj/item/ammo_box/magazine/lmg
+	init_mag_type = /obj/item/ammo_box/magazine/lmg
+	weapon_class = WEAPON_CLASS_RIFLE
+	weapon_weight = GUN_ONE_HAND_ONLY
+	damage_multiplier = GUN_LESS_DAMAGE_T4
+	cock_delay = GUN_COCK_RIFLE_BASE
+	init_recoil = LMG_RECOIL(1)
+	init_firemodes = list(
+		/datum/firemode/automatic/rpm300,
+		/datum/firemode/burst/two/fastest
+	)
+	can_suppress = TRUE
+	suppressor_state = "rifle_suppressor"
+	suppressor_x_offset = 29
+	suppressor_y_offset = 29
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+
+/* * * * * * * * * * *
+ * Eastern Compact Shotgun
+ * High Tier Handmade based on the Saiga-12K
+ * 12 Gauge
+ * Reduced damage, semi-auto compact shotgun
+ * High Recoil
+ * Okay RPM
+ * Requires G&B 5
+ * * * * * * * * * * */
+
+/obj/item/gun/ballistic/automatic/eastern_compact_shotgun
+	name = "Eastern Compact Shotgun"
+	desc = "A chopped down shotgun design hailing from the other side of the Iron Curtain. Whoever drew the schematics for this thing forgot to tell people that a long barrel was an option on the design, and so, you now have a carbine length, semi-automatic shotgun feeding from hilariously bulky banana magazines. Due to how huge the magazines are, there is no chance this fits on your pack."
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "eastern_compact_shotgun"
+	item_state = "easterncompactshotgun"
+	icon_prefix = "handmade_rifle"
+	mag_type = /obj/item/ammo_box/magazine/d12g
+	init_mag_type = /obj/item/ammo_box/magazine/d12g
+	weapon_class = WEAPON_CLASS_CARBINE
+	weapon_weight = GUN_ONE_HAND_ONLY
+	damage_multiplier = GUN_LESS_DAMAGE_T2
+	cock_delay = GUN_COCK_RIFLE_BASE
+	init_recoil = RIFLE_RECOIL(2.2)
+	init_firemodes = list(
+		/datum/firemode/semi_auto/slow
+	)
+	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
+
+/* * * * * * * * * * *
+ * Eastern Assassin Rifle
+ * VSS clone firing .308 because lol, lmao. Integrally suppressed.
+ * .308
+ * Good damage
+ * Good accuracy
+ * Slow RPM, 2 round burst option
+ * Requires G&B 5
+ * * * * * * * * * * */
+
+/obj/item/gun/ballistic/automatic/eastern_assassin_rifle
+	name = "Eastern Assassin Rifle"
+	desc = "An Integrally Suppressed Marksman Rifle, created with a mixture of pre-war and improvised parts. Light, rugged and shoots .308, although it seems to kick especially hard due to the rifle's weight, utter lack of recoil mitigation. It is reccomended to be utilized with reduced loads."
+	icon = 'icons/obj/guns/projectile.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "eastern_assassin_rifle"
+	item_state = "easternar"
+	icon_prefix = "handmade_rifle"
+	mag_type = /obj/item/ammo_box/magazine/m308
+	init_mag_type = /obj/item/ammo_box/magazine/m308
+	weapon_class = WEAPON_CLASS_CARBINE
+	weapon_weight = GUN_TWO_HAND_ONLY
+	damage_multiplier = GUN_EXTRA_DAMAGE_0
+	cock_delay = GUN_COCK_RIFLE_BASE
+	init_recoil = RIFLE_RECOIL(0.8)
+	init_firemodes = list(
+		/datum/firemode/semi_auto/fast,
+		/datum/firemode/burst/two/fast
+	)
+	gun_tags = list(GUN_FA_MODDABLE, GUN_SCOPE)
+	can_scope = TRUE
+	scope_state = "smallrifle_scope"
+	scope_x_offset = 5
+	scope_y_offset = 14
+	gun_accuracy_zone_type = ZONE_WEIGHT_PRECISION
+	can_suppress = FALSE
+	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 
 /* * * * * * * * * * *
  * BOZAR
@@ -2414,7 +2566,7 @@
 	name = "4.73mm carbine"
 	desc = "A WT-550 Personal Defense Weapon, manufactured by West Tek. It fires 4.73mm caseless rounds."
 	item_state = "m90"
-	icon_state = "WT550"
+	icon_state = "WT050"
 	mag_type = /obj/item/ammo_box/magazine/m473/small
 	init_mag_type = /obj/item/ammo_box/magazine/m473/small
 	weapon_class = WEAPON_CLASS_NORMAL
@@ -2695,7 +2847,7 @@
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	weapon_class = WEAPON_CLASS_RIFLE
 	weapon_weight = GUN_ONE_HAND_ONLY
-	damage_multiplier = GUN_EXTRA_DAMAGE_T1
+	damage_multiplier = GUN_LESS_DAMAGE_T1
 	init_recoil = RIFLE_RECOIL(0.6)
 	init_firemodes = list(
 		/datum/firemode/automatic/rpm200,
